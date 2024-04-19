@@ -6,13 +6,15 @@ import { MainLayoutComponent } from './pages/main-layout/main-layout.component';
 import { MainHeaderComponent } from './components/main-header/main-header.component';
 import { MainFooterComponent } from './components/main-footer/main-footer.component';
 import { CmmModule } from 'src/app/common/common.module';
+import { MainNavbarMennuComponent } from './components/main-navbar-mennu/main-navbar-mennu.component';
 
 
 @NgModule({
   declarations: [
     MainLayoutComponent,
     MainHeaderComponent,
-    MainFooterComponent
+    MainFooterComponent,
+    MainNavbarMennuComponent
   ],
   imports: [
     CommonModule,

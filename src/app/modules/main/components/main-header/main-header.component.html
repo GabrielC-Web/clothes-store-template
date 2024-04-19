@@ -1,6 +1,6 @@
-<div class="d-flex w-100">
+<header class="d-flex justify-content-between align-items-end w-100 pt-5">
 
-    <div class="d-flex">
+    <div class="d-flex gap-3">
 
         <a href="">Hombre</a>
         <a href="">Mujer</a>
@@ -8,12 +8,19 @@
     </div>
 
 
-    <h1>Miraculous</h1>
+    <h1 class="m-0 cmm-txt-thin-bold">Miraculous</h1>
 
-    <div class="d-flex">
+    <div class="d-flex gap-5">
 
-        <cmm-cmp-i-text></cmm-cmp-i-text>
+        <cmm-cmp-i-text subscriptSizing="dynamic"></cmm-cmp-i-text>
+
+        <div class="d-flex">
+
+            <img class="header_icon" [src]="icons.person" alt="">
+            <img class="header_icon" [src]="icons.kart" alt="">
+
+        </div>
 
     </div>
 
-</div>
+</header>
