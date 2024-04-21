@@ -1,5 +1,8 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { icons } from 'src/assets/images/image-routes';
+import { MainMenuDialogComponent } from '../../dialogs/main-menu-dialog/main-menu-dialog.component';
+import { MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'cmp-main-header',
@@ -20,6 +23,12 @@ export class MainHeaderComponent {
    */
   @Input() sidenavOpen: boolean = false
 
+  showed: string = ''
+
+  constructor(
+    private dialog: MatDialog
+  ) { }
+
   /**
    * Toggle el sidenav
    */
@@ -28,6 +37,12 @@ export class MainHeaderComponent {
     this.sidenavOpen = !this.sidenavOpen
 
     this.openSidenav.emit(this.sidenavOpen)
+
+  }
+
+  showMenu(menu: string) {
+
+    this.showed = menu
 
   }
 

@@ -8,6 +8,8 @@ import { MainFooterComponent } from './components/main-footer/main-footer.compon
 import { CmmModule } from 'src/app/common/common.module';
 import { MainNavbarMennuComponent } from './components/main-navbar-mennu/main-navbar-mennu.component';
 import { MainSidenavMenuComponent } from './components/main-sidenav-menu/main-sidenav-menu.component';
+import { MainMenuDialogComponent } from './dialogs/main-menu-dialog/main-menu-dialog.component';
+import { MainMatmenuComponent } from './components/main-matmenu/main-matmenu.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { MainSidenavMenuComponent } from './components/main-sidenav-menu/main-si
     MainHeaderComponent,
     MainFooterComponent,
     MainNavbarMennuComponent,
-    MainSidenavMenuComponent
+    MainSidenavMenuComponent,
+    MainMenuDialogComponent,
+    MainMatmenuComponent
   ],
   imports: [
     CommonModule,

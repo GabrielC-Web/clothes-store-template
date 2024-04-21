@@ -14,3 +14,7 @@ export const icons = {
     screen_with_kart: 'assets/images/icons/screen_with_kart.svg',
     trash: 'assets/images/icons/trash.svg',
 }
+
+export const images = {
+    ad: 'assets/images/products/ad.jpeg'
+}
