@@ -19,6 +19,7 @@ export const logos = {
     dior: 'assets/images/icons/dior.svg',
     channel: 'assets/images/icons/channel.svg',
     mango: 'assets/images/icons/mango.svg',
+    miraculous: 'assets/images/icons/miraculous.svg'
 }
 
 export const images = {
