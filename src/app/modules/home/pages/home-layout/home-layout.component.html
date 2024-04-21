@@ -67,6 +67,51 @@
 
         </section>
 
+
     </div>
+
+    <section class="w-100 parallax_bg my-5" [style.background-image]="'url(' + images.parallax_girl +')'"
+        style="height: 250px;max-width: 1500px;">
+
+    </section>
+
+    <section class="row g-0 w-100 my-5" style="max-width: 1200px;">
+
+        <h3 class="text-center">New Arrivals</h3>
+        <span class="text-center">Marca tu estilo</span>
+
+        <section class="col-12 d-flex flex-column justify-content-between align-items-center" style="height: 500px;">
+            <div class=""></div>
+
+            <div class="w-100" style="max-width: 400px;">
+                <cmp-cmm-new-button class="w-fit" [config]="{customBorderRadius: '10px'}">
+                    <span class=" fs-20 cmm-txt-thin-bold">Ver todo</span>
+                </cmp-cmm-new-button>
+            </div>
+
+        </section>
+
+
+    </section>
+
+    <section class="w-100 d-flex justify-content-center flex-column align-items-center py-5"
+        style="background-color:#F5F5F5;">
+
+        <h3 class="text-center">Tus marcas favoritas</h3>
+
+        <span class="text-center">en un solo lugar</span>
+
+        <!-- logos -->
+
+        <div class="row g-0 justify-content-evenly align-items-center py-5" style="max-height: 200px;">
+
+            <div *ngFor="let logo of logosBanner" class="col-4">
+                <img class="w-100" [src]="logo" alt="" style="max-height: 100px;">
+            </div>
+
+        </div>
+
+    </section>
+
 
 </div>

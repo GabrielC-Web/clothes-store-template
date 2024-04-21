@@ -15,6 +15,12 @@ export const icons = {
     trash: 'assets/images/icons/trash.svg',
 }
 
+export const logos = {
+    dior: 'assets/images/icons/dior.svg',
+    channel: 'assets/images/icons/channel.svg',
+    mango: 'assets/images/icons/mango.svg',
+}
+
 export const images = {
     ad: 'assets/images/products/ad.jpeg',
     tatoo_girl: 'assets/images/tatoo_girl.webp',
@@ -35,4 +41,5 @@ export const images = {
     t_shirt: 'assets/images/products/t-shirt.png',
     tall_shoe: 'assets/images/products/tall_shoe.png',
     white_shoe: 'assets/images/products/white_shoe.png',
+    parallax_girl: 'assets/images/parallax_girl.webp',
 }
