@@ -11,7 +11,9 @@ export class HomeLayoutComponent {
   images = images
 
   outstandingProducts = [
-    this.images.chica1
+    this.images.t_shirt,
+    this.images.tall_shoe,
+    this.images.white_shoe,
   ]
 
 }

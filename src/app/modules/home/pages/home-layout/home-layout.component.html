@@ -1,20 +1,72 @@
 <!-- Imagen principal -->
-<div class="bg-white">
+<div class="bg-white d-flex flex-column align-items-center">
     <section class="row g-0 justify-content-center align-items-center w-100 h-100 mx-auto home_image_bg">
         <img class="" [src]="images.tatoo_girl" alt="" style="max-width: 700px;">
     </section>
 
-    <!-- Productos y ofertas -->
-    <section class="row g-0 px-5 mt-5 bg-white">
+    <div class="row g-0 w-100 justify-content-center" style="max-width: 1200px;">
 
-        <!-- productos destacados -->
-        <h5>Productos destacados</h5>
+        <!-- Productos y ofertas -->
+        <section class="col-12 d-flex flex-column align-items- px-5 mt-5 bg-white">
 
-        <div *ngFor="let item of outstandingProducts" class="col-4 p-3">
+            <!-- productos destacados -->
+            <h5>Productos destacados</h5>
 
-            <img [src]="item" alt="">
+            <div class="row g-0 w-100 mx-auto">
 
-        </div>
+                <div *ngFor="let item of outstandingProducts" class="col-4 px-3">
 
-    </section>
+                    <img [src]="item" alt="" class="w-100 cursor-pointer small-scale" style="aspect-ratio: 9/12;">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="col-12 d-flex flex-column align-items-center px-5 mt-5 bg-white">
+
+            <!-- productos destacados -->
+            <h5 class="text-center">Ofertas del momento</h5>
+
+            <div class="w-100 d-flex gap-4 flex-column flex-md-row">
+
+                <div class="space1 d-flex flex-column gap-4">
+
+                    <div class="w-100 d-flex gap-4">
+
+                        <div class="item1 item_bg w-50 small-scale cursor-pointer"
+                            [style.background-image]="'url(' + images.shirt2 +')'">
+                        </div>
+
+                        <div class="item2 item_bg w-50 small-scale cursor-pointer"
+                            [style.background-image]="'url(' + images.chico3 +')'">
+                        </div>
+
+                    </div>
+
+                    <div class="item4 item_bg w-100 small-scale cursor-pointer"
+                        [style.background-image]="'url(' + images.chica1 +')'">
+                    </div>
+
+                </div>
+
+                <div class="space2 d-flex flex-column gap-4">
+
+                    <div class="item3 item_bg w-100 small-scale cursor-pointer"
+                        [style.background-image]="'url(' + images.chico1 +')'">
+                    </div>
+
+                    <div class="item5 item_bg w-100 small-scale cursor-pointer"
+                        [style.background-image]="'url(' + images.belt +')'">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
 </div>

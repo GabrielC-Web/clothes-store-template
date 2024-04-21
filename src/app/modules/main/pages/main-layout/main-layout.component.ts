@@ -32,6 +32,8 @@ export class MainLayoutComponent {
       this.smallMode = false
     }
 
+    console.log(window.innerWidth);
+
   }
 
   constructor(
