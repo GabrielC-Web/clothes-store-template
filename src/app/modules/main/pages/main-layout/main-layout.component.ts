@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class MainLayoutComponent {
 
+  /**
+   * Indica si el sidenav está abierto
+   */
+  sidenavOpen: boolean = false
+
 }

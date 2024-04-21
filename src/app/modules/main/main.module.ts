@@ -7,6 +7,7 @@ import { MainHeaderComponent } from './components/main-header/main-header.compon
 import { MainFooterComponent } from './components/main-footer/main-footer.component';
 import { CmmModule } from 'src/app/common/common.module';
 import { MainNavbarMennuComponent } from './components/main-navbar-mennu/main-navbar-mennu.component';
+import { MainSidenavMenuComponent } from './components/main-sidenav-menu/main-sidenav-menu.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { MainNavbarMennuComponent } from './components/main-navbar-mennu/main-na
     MainLayoutComponent,
     MainHeaderComponent,
     MainFooterComponent,
-    MainNavbarMennuComponent
+    MainNavbarMennuComponent,
+    MainSidenavMenuComponent
   ],
   imports: [
     CommonModule,
