@@ -1,3 +1,20 @@
-<div class="row g-0 w-100 h-100 mx-auto">
-    hola
+<!-- Imagen principal -->
+<div class="bg-white">
+    <section class="row g-0 justify-content-center align-items-center w-100 h-100 mx-auto home_image_bg">
+        <img class="" [src]="images.tatoo_girl" alt="" style="max-width: 700px;">
+    </section>
+
+    <!-- Productos y ofertas -->
+    <section class="row g-0 px-5 mt-5 bg-white">
+
+        <!-- productos destacados -->
+        <h5>Productos destacados</h5>
+
+        <div *ngFor="let item of outstandingProducts" class="col-4 p-3">
+
+            <img [src]="item" alt="">
+
+        </div>
+
+    </section>
 </div>

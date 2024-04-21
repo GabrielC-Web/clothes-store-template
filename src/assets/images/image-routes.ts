@@ -16,5 +16,16 @@ export const icons = {
 }
 
 export const images = {
-    ad: 'assets/images/products/ad.jpeg'
+    ad: 'assets/images/products/ad.jpeg',
+    tatoo_girl: 'assets/images/tatoo_girl.webp',
+    belt: 'assets/images/products/belt.png',
+    cap: 'assets/images/products/cap.png',
+    chica1: 'assets/images/products/chica1.png',
+    chica2: 'assets/images/products/chica2.png',
+    chica3: 'assets/images/products/chica3.png',
+    chica4: 'assets/images/products/chica4.png',
+    chica5: 'assets/images/products/chica5.png',
+    chico1: 'assets/images/products/chico1.png',
+    chico2: 'assets/images/products/chico2.png',
+    chico3: 'assets/images/products/chico3.png',
 }

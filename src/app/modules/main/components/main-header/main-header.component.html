@@ -1,60 +1,36 @@
-<header
-    class="row g-0 justify-content-center justify-content-lg-between align-items-center align-items-lg-end w-100 pt-5">
+<header class="row justify-content-center mx-auto w-100 pt-5 px-3 pb-3" [ngClass]="showBg?'header_bg':''">
 
-    <!-- Nivel 1 en tamaño grande -->
+    <div class="col-12" style="max-width: 1200px;">
+        <div
+            class="row w-100 g-0 justify-content-center justify-content-lg-between align-items-center align-items-lg-end">
+            <!-- Nivel 1 en tamaño grande -->
 
-    <!-- navbar -->
-    <div class="col-4 d-none d-lg-flex gap-3">
+            <!-- navbar -->
+            <div class="col-4 d-none d-lg-flex gap-3">
 
-        <div class="dropdown">
-            <a class="text-black cursor-pointer dropdown_link">Hombre</a>
-            <cmp-main-matmenu class="dropdown_menu shadowBorder"></cmp-main-matmenu>
-        </div>
+                <div class="dropdown">
+                    <a class="text-black cursor-pointer dropdown_link">Hombre</a>
+                    <cmp-main-matmenu class="dropdown_menu shadowBorder"></cmp-main-matmenu>
+                </div>
 
-        <div class="dropdown">
-            <a class="text-black cursor-pointer dropdown_link">Mujer</a>
-            <cmp-main-matmenu class="dropdown_menu shadowBorder"></cmp-main-matmenu>
-        </div>
-
-    </div>
-
-    <!-- Título -->
-    <div class="col-12 col-lg-4">
-        <h1 class="m-0 cmm-txt-thin-bold text-center">Miraculous</h1>
-    </div>
-
-    <!-- Espacio de buscador y botones -->
-    <div class="col-4 d-none d-lg-flex">
-
-        <cmm-cmp-i-text subscriptSizing="dynamic"></cmm-cmp-i-text>
-
-        <div class="d-flex">
-
-            <img class="header_icon" [src]="icons.person" alt="">
-            <img class="header_icon" [src]="icons.kart" alt="">
-
-        </div>
-
-    </div>
-
-    <!-- Nivel 2 (Tamaño pequeño) -->
-    <div class="col-12 mt-3 d-flex d-lg-none justify-content-center">
-
-        <div class="row justify-content-between w-100">
-
-            <!-- Botón de menú -->
-            <div class="col-2 d-flex d-lg-none p-3 align-items-center justify-content-center">
-
-                <mat-icon class="cursor-pointer" (click)="toggleSidenav()">menu</mat-icon>
+                <div class="dropdown">
+                    <a class="text-black cursor-pointer dropdown_link">Mujer</a>
+                    <cmp-main-matmenu class="dropdown_menu shadowBorder"></cmp-main-matmenu>
+                </div>
 
             </div>
 
-            <!-- Buscador y botones de navegación -->
-            <div class="col-10 d-flex justify-content-end gap-3">
+            <!-- Título -->
+            <div class="col-12 col-lg-4">
+                <h1 class="m-0 cmm-txt-thin-bold text-center">Miraculous</h1>
+            </div>
 
-                <cmm-cmp-i-text subscriptSizing="dynamic" style="max-width: 50%;"></cmm-cmp-i-text>
+            <!-- Espacio de buscador y botones -->
+            <div class="col-4 d-none d-lg-flex justify-content-between">
 
-                <div class="d-flex align-items-center">
+                <cmm-cmp-i-text subscriptSizing="dynamic"></cmm-cmp-i-text>
+
+                <div class="d-flex">
 
                     <img class="header_icon" [src]="icons.person" alt="">
                     <img class="header_icon" [src]="icons.kart" alt="">
@@ -63,8 +39,37 @@
 
             </div>
 
-        </div>
+            <!-- Nivel 2 (Tamaño pequeño) -->
+            <div class="col-12 mt-3 d-flex d-lg-none justify-content-center">
 
+                <div class="row justify-content-between w-100">
+
+                    <!-- Botón de menú -->
+                    <div class="col-2 d-flex d-lg-none p-3 align-items-center justify-content-center">
+
+                        <mat-icon class="cursor-pointer" (click)="toggleSidenav()">menu</mat-icon>
+
+                    </div>
+
+                    <!-- Buscador y botones de navegación -->
+                    <div class="col-10 d-flex justify-content-end gap-3">
+
+                        <cmm-cmp-i-text subscriptSizing="dynamic" style="max-width: 50%;"></cmm-cmp-i-text>
+
+                        <div class="d-flex align-items-center">
+
+                            <img class="header_icon" [src]="icons.person" alt="">
+                            <img class="header_icon" [src]="icons.kart" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
 </header>

@@ -4,13 +4,14 @@
     <main class="row w-100 g-0 justify-content-center align-items-start">
 
         <!-- Espacio para el navbar -->
-        <cmp-main-header id="header" class="w-100 position-fixed header_container" style=""
-            (openSidenav)="sidenavOpen = $event" [sidenavOpen]="sidenavOpen"></cmp-main-header>
+        <cmp-main-header id="header" class="w-100 position-fixed header_container"
+            [ngStyle]="{'z-index':sidenavOpen?'1':'200'}" (openSidenav)="sidenavOpen = $event"
+            [sidenavOpen]="sidenavOpen"></cmp-main-header>
 
         <!-- Contenido principal -->
-        <div class="mx-auto w-100" style="max-width: 1200px;margin-top: 162px;">
+        <div class="mx-auto w-100" [ngClass]="!currentRoute.includes('home') || smallMode? 'main_container':''">
 
-            <mat-sidenav-container class="w-100">
+            <mat-sidenav-container class="w-100 position-relative">
 
                 <!-- sidenav -->
                 <mat-sidenav class="w-100" mode="over" [opened]="sidenavOpen" [fixedInViewport]="true">
@@ -20,7 +21,7 @@
                 </mat-sidenav>
 
                 <!-- Contenido principal -->
-                <mat-sidenav-content class="h-100" style="background-color: green;">
+                <mat-sidenav-content>
                     <router-outlet></router-outlet>
                 </mat-sidenav-content>
 

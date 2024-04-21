@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, Output, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { icons } from 'src/assets/images/image-routes';
 import { MainMenuDialogComponent } from '../../dialogs/main-menu-dialog/main-menu-dialog.component';
@@ -22,6 +22,23 @@ export class MainHeaderComponent {
    * Indica si el sidenav está abierto
    */
   @Input() sidenavOpen: boolean = false
+
+  /**
+   * Indica si debo mostrar el background
+   */
+  @Input() showBg: boolean = false
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(e: Event) {
+    console.log(document.documentElement.scrollTop);
+
+    if (document.documentElement.scrollTop >= 162) {
+      this.showBg = true
+    } else {
+      this.showBg = false
+    }
+
+  }
 
   showed: string = ''
 
