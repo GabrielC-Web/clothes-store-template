@@ -5,11 +5,13 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { ProductsLayoutComponent } from './pages/products-layout/products-layout.component';
 import { CmmModule } from 'src/app/common/common.module';
 import { CoreModule } from 'src/app/core/core.module';
+import { ProductsOverviewLayoutComponent } from './pages/products-overview-layout/products-overview-layout.component';
 
 
 @NgModule({
   declarations: [
-    ProductsLayoutComponent
+    ProductsLayoutComponent,
+    ProductsOverviewLayoutComponent
   ],
   imports: [
     CommonModule,
