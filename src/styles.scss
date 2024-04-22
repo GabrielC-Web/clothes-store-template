@@ -26,6 +26,12 @@ body {
     height: 2px;
 }
 
+.color_box {
+    width: 30px;
+    height: 20px;
+    border: 1px solid black;
+}
+
 @media (max-width: 400px) {
 
     .decorated_title {
