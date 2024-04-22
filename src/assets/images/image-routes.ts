@@ -13,6 +13,8 @@ export const icons = {
     house: 'assets/images/icons/house.svg',
     screen_with_kart: 'assets/images/icons/screen_with_kart.svg',
     trash: 'assets/images/icons/trash.svg',
+    return: 'assets/images/icons/return.svg',
+    purse: 'assets/images/icons/purse.svg',
 }
 
 export const logos = {

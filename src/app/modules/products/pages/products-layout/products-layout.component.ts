@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { images } from 'src/assets/images/image-routes';
+import { icons, images } from 'src/assets/images/image-routes';
 
 @Component({
   selector: 'pag-products-layout',
@@ -99,6 +99,24 @@ export class ProductsLayoutComponent {
       ]
     },
 
+  ]
+
+  items: any[] = [
+    {
+      icon: icons.van,
+      info: 'Envío Gratis',
+      text: 'Solo dentro la ciudad de Caracas'
+    },
+    {
+      icon: icons.return,
+      info: 'Devoluciones',
+      text: 'Devoluciones gratuitas y cambios'
+    },
+    {
+      icon: icons.purse,
+      info: 'Empaque exclusivo',
+      text: 'Empaque exclusivo por marca'
+    },
   ]
 
 }
