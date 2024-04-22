@@ -16,7 +16,7 @@
 
         <div *ngFor="let item of expansionPanel.items; index as i" class="cursor-pointer"
             [ngClass]="i == 0?'my-3':'mb-3'">
-            <span>{{item}}</span>
+            <span routerLink="/products" (click)="closeSidenav.emit()">{{item}}</span>
             <mat-divider></mat-divider>
         </div>
 
