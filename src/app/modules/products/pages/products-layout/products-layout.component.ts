@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { icons, images } from 'src/assets/images/image-routes';
 
 @Component({
@@ -118,5 +118,36 @@ export class ProductsLayoutComponent {
       text: 'Empaque exclusivo por marca'
     },
   ]
+
+  smallMode: boolean = false
+
+  @HostListener('window:resize', ['$event'])
+  onResize(e: Event) {
+
+    if (window.innerWidth <= 767) {
+
+      this.smallMode = true
+
+    } else {
+
+      this.smallMode = false
+
+    }
+
+  }
+
+  ngOnInit() {
+
+    if (window.innerWidth <= 767) {
+
+      this.smallMode = true
+
+    } else {
+
+      this.smallMode = false
+
+    }
+
+  }
 
 }
