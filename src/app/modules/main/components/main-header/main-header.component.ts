@@ -31,7 +31,7 @@ export class MainHeaderComponent {
   @HostListener('window:scroll', ['$event'])
   onScroll(e: Event) {
 
-    if (document.documentElement.scrollTop >= 162) {
+    if (document.documentElement.scrollTop != 0) {
       this.showBg = true
     } else {
       this.showBg = false
