@@ -1,0 +1,35 @@
+<div class="row mx-auto w-100 bg-white">
+
+    <section class="col-12 my-5">
+
+        <!-- productos -->
+        <div class="row g-0 w-100 justify-content-center mt-5">
+
+            <div *ngFor="let product of products" class="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-5">
+
+                <cmp-core-product-card class="w-100 d-flex justify-content-center"
+                    [data]="product"></cmp-core-product-card>
+
+            </div>
+
+            <!-- Paginador -->
+            <cmp-cmm-paginator class="col-12 px-4" [posts]="products"></cmp-cmm-paginator>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- características del negocio con íconos -->
+<!-- <div class="w-100 row mx-auto py-4" style="background-color: #E7E7E7;">
+
+    <div *ngFor="let item of items" class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+
+        <img class="w-100" [src]="item.icon" style="max-width: 100px;">
+
+        <span class="text-center cmm-txt-thin-bold" style="max-width: 150px;">{{item.info}}</span>
+
+    </div>
+
+</div> -->
