@@ -64,7 +64,10 @@ export class MainLayoutComponent {
     socialNetworkIcons: [
       icons.instagram,
       icons.facebook,
-    ]
+    ],
+    businessQualitiesConfig: {
+      showBorder: true
+    }
   }
 
   @HostListener('window:resize')

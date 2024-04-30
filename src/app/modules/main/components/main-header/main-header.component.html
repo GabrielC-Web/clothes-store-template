@@ -32,8 +32,9 @@
 
                 <div class="d-flex">
 
-                    <img class="header_icon cursor-pointer" [src]="icons.person" alt="">
-                    <img class="header_icon cursor-pointer" [src]="icons.kart" routerLink="/products/overview" alt="">
+                    <mat-icon class="header_icon fs-30 cursor-pointer">person</mat-icon>
+                    <mat-icon class="header_icon fs-30 cursor-pointer"
+                        routerLink="products/overview">shopping_cart</mat-icon>
 
                 </div>
 
@@ -56,10 +57,11 @@
 
                         <cmm-cmp-i-text subscriptSizing="dynamic" style="max-width: 50%;"></cmm-cmp-i-text>
 
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center gap-3">
 
-                            <img class="header_icon" [src]="icons.person" alt="">
-                            <img class="header_icon" [src]="icons.kart" alt="">
+                            <mat-icon class="header_icon fs-30 cursor-pointer">person</mat-icon>
+                            <mat-icon class="header_icon fs-30 cursor-pointer"
+                                routerLink="products/overview">shopping_cart</mat-icon>
 
                         </div>
 
