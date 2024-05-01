@@ -83,35 +83,14 @@
         <section class="col-12 d-flex flex-column justify-content-between align-items-center">
 
             <!-- Carrusel de productos -->
-            <cmp-cmm-carousel class="w-100 my-5" carouselId="home_carousel" [customButtons]="false">
-
-                <!-- Elementos del carrusel en tamaño grande -->
-                <ng-container *ngIf="!carouselProductsSmallScreen.length" carousel>
-
-                    <!-- Items del carrusel -->
-                    <div *ngFor="let productSection of carouselProductsBigScreen, index as i"
-                        class="carousel-item h-100 w-100" [ngClass]="{'active': i == 0}">
-
-                        <div class="w-100 h-100 p-0 d-flex justify-content-center align-items-center"
-                            style="gap: 2rem;">
-
-                            <cmp-core-product-card *ngFor="let item of productSection" [data]="item"
-                                routerLink="/products/detail"></cmp-core-product-card>
-
-                        </div>
-
-                    </div>
-
-                </ng-container>
+            <cmp-cmm-new-carousel class="my-5" carouselId="home_carousel">
 
                 <!-- Elementos del carrusel en tamaño pequeño -->
-                <ng-container *ngIf="carouselProductsSmallScreen.length" carousel>
+                <ng-container *ngIf="carouselProducts.length">
 
-                    <div *ngFor="let item of carouselProductsSmallScreen, index as i" class="carousel-item h-100 w-100"
-                        [ngClass]="{'active': i == 0}">
+                    <div *ngFor="let item of carouselProducts, index as i" class="carousel_item">
 
-                        <div class="w-100 h-100 p-0 d-flex justify-content-center align-items-center"
-                            style="gap: 2rem;">
+                        <div class="h-100 p-0 d-flex justify-content-center align-items-center">
 
                             <cmp-core-product-card [data]="item" routerLink="/products/detail"></cmp-core-product-card>
 
@@ -121,7 +100,7 @@
 
                 </ng-container>
 
-            </cmp-cmm-carousel>
+            </cmp-cmm-new-carousel>
 
             <div class="w-100" style="max-width: 400px;">
                 <cmp-cmm-new-button class="w-fit" [config]="{customBorderRadius: '10px'}">
