@@ -1,8 +1,8 @@
-import { Component, EventEmitter, HostListener, Input, Output, ViewChild } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { CmmSearchDialogComponent } from 'src/app/common/components/ecommerce/cmm-search-dialog/cmm-search-dialog.component';
+import { CmmDialogService } from 'src/app/common/services/dialogs.service';
 import { icons } from 'src/assets/images/image-routes';
-import { MainMenuDialogComponent } from '../../dialogs/main-menu-dialog/main-menu-dialog.component';
-import { MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'cmp-main-header',
@@ -42,7 +42,8 @@ export class MainHeaderComponent {
   showed: string = ''
 
   constructor(
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private dialogsService: CmmDialogService
   ) { }
 
   /**
@@ -59,6 +60,15 @@ export class MainHeaderComponent {
   showMenu(menu: string) {
 
     this.showed = menu
+
+  }
+
+  /**
+   * Abre el diálogo para buscar
+   */
+  openSearch() {
+
+    this.dialogsService.CmmOpenSearchDialog()
 
   }
 
