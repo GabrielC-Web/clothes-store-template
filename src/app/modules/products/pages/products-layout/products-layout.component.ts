@@ -43,6 +43,7 @@ export class ProductsLayoutComponent {
     {
       image: images.jean,
       name: 'JEANS MARCA',
+      showOfferBadge: true,
       price: '158',
       variants: [
         '#356281',
@@ -72,6 +73,7 @@ export class ProductsLayoutComponent {
       image: images.cap,
       name: 'GORRA MARCA',
       price: '200',
+      showOfferBadge: true,
       variants: [
         '#D7D3D2',
         '#000',
@@ -81,6 +83,7 @@ export class ProductsLayoutComponent {
     {
       image: images.cap,
       name: 'GORRA MARCA',
+      showOfferBadge: true,
       price: '200',
       variants: [
         '#D7D3D2',

@@ -14,6 +14,23 @@
     max-width: 300px;
 }
 
+.offer_bage {
+    position: absolute;
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+    top: 1.5rem;
+    width: fit-content;
+    background-color: black;
+    border-radius: 0 0 30px 0;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.offer_bage:hover {
+    scale: 1.05;
+}
+
 @media (max-width: 992px) {
 
     .product_card {

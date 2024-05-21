@@ -1,4 +1,7 @@
-<div class="row h-100 py-1 g-0 product_card">
+<div class="row h-100 py-1 g-0 product_card position-relative">
+
+    <!-- badge de oferta -->
+    <span *ngIf="data.showOfferBadge" class="offer_bage">Oferta</span>
 
     <div class="flip_box">
         <div class="w-100 flip_box_inner" style="aspect-ratio: 1;">
