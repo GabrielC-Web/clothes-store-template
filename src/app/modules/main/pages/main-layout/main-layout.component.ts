@@ -67,7 +67,7 @@ export class MainLayoutComponent {
     ],
     businessQualitiesConfig: {
       showBorder: true
-    }
+    },
   }
 
   @HostListener('window:resize')
