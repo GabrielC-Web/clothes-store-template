@@ -16,7 +16,7 @@
 
                 <div *ngFor="let item of outstandingProducts" class="col-4 px-3">
 
-                    <img [src]="item" alt="" routerLink="/Productos/Carrito" class="w-100 cursor-pointer small-scale"
+                    <img [src]="item" alt="" routerLink="/Productos/Detalle" class="w-100 cursor-pointer small-scale"
                         style="aspect-ratio: 1;">
 
                 </div>
@@ -37,17 +37,17 @@
                     <div class="w-100 d-flex gap-4">
 
                         <div class="item1 item_bg w-50 small-scale cursor-pointer"
-                            [style.background-image]="'url(' + images.shirt2 +')'" routerLink="/Productos/Carrito">
+                            [style.background-image]="'url(' + images.shirt2 +')'" routerLink="/Productos/Detalle">
                         </div>
 
                         <div class="item2 item_bg w-50 small-scale cursor-pointer"
-                            [style.background-image]="'url(' + images.chico3 +')'" routerLink="/Productos/Carrito">
+                            [style.background-image]="'url(' + images.chico3 +')'" routerLink="/Productos/Detalle">
                         </div>
 
                     </div>
 
                     <div class="item4 item_bg w-100 small-scale cursor-pointer"
-                        [style.background-image]="'url(' + images.chica1 +')'" routerLink="/Productos/Carrito">
+                        [style.background-image]="'url(' + images.chica1 +')'" routerLink="/Productos/Detalle">
                     </div>
 
                 </div>
@@ -55,11 +55,11 @@
                 <div class="space2 d-flex flex-column gap-4">
 
                     <div class="item3 item_bg w-100 small-scale cursor-pointer"
-                        [style.background-image]="'url(' + images.chico1 +')'" routerLink="/Productos/Carrito">
+                        [style.background-image]="'url(' + images.chico1 +')'" routerLink="/Productos/Detalle">
                     </div>
 
                     <div class="item5 item_bg w-100 small-scale cursor-pointer"
-                        [style.background-image]="'url(' + images.belt +')'" routerLink="/Productos/Carrito">
+                        [style.background-image]="'url(' + images.belt +')'" routerLink="/Productos/Detalle">
                     </div>
 
                 </div>
@@ -94,7 +94,7 @@
                         <div class="h-100 p-0 d-flex justify-content-center align-items-center">
 
                             <cmp-core-product-card [data]="item"
-                                routerLink="/Productos/Carrito"></cmp-core-product-card>
+                                routerLink="/Productos/Detalle"></cmp-core-product-card>
 
                         </div>
 
@@ -105,7 +105,7 @@
             </cmp-cmm-new-carousel>
 
             <div class="w-100" style="max-width: 400px;">
-                <cmp-cmm-new-button class="w-fit" [config]="{customBorderRadius: '10px'}">
+                <cmp-cmm-new-button class="w-fit" [config]="{customBorderRadius: '10px'}" routerLink="/Productos">
                     <span class=" fs-20 cmm-txt-thin-bold">Ver todo</span>
                 </cmp-cmm-new-button>
             </div>
